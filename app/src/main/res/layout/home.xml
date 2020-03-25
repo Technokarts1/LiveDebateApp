@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_grey"
+    android:orientation="vertical"
+    android:paddingBottom="60dp">
+
+    <ScrollView
+        android:id="@+id/home_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+
+                android:elevation="17dp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCategory01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="1dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:visibility="visible">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/SliderDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:elevation="17dp">
+
+                <RelativeLayout
+                    android:id="@+id/llcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vpHome"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:hint="Live Debates"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:hint="View All"
+                        android:padding="5dp"
+                        android:singleLine="true"
+
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text"
+                        android:paddingBottom="1dp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:visibility="visible">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:elevation="17dp">
+
+                <RelativeLayout
+                    android:id="@+id/llcategory1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llcategory1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:hint="Trending Debates"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:hint="View All"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvCategory1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text1"
+                        android:paddingBottom="1dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:elevation="17dp">
+
+                <RelativeLayout
+                    android:id="@+id/llcategory2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/llcategory1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:hint="Top Users"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:hint="View All"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvCategory2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text2"
+                        android:paddingBottom="1dp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
